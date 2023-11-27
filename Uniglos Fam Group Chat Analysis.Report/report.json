@@ -1,0 +1,256 @@
+{
+  "config": "{\"version\":\"5.46\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU04\",\"version\":\"5.43\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "config": "{}",
+      "name": "Pod"
+    }
+  ],
+  "publicCustomVisuals": [
+    "WordCloud1447959067750"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "15305319539270581.jfif",
+            "path": "15305319539270581.jfif",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU04",
+            "path": "BaseThemes/CY23SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"outspacePane\":[{\"properties\":{\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}",
+      "displayName": "Overview",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"08a6883de084e471a489\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":380,\"height\":122}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"15305319539270581.jfif\"}}}}}]}},\"parentGroupName\":\"eb03608eac1174a1070a\"}",
+          "filters": "[]",
+          "height": 122.00,
+          "width": 380.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"1e8ca5871a8821750500\",\"layouts\":[{\"id\":0,\"position\":{\"x\":755.2813067150636,\"y\":180.32667876588022,\"z\":3000,\"width\":177.71324863883848,\"height\":100.61705989110709}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures Table.sum word\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"sum word\"},\"Name\":\"Measures Table.sum word\",\"NativeReferenceName\":\"Total Word\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"sum word\"}}}]},\"columnProperties\":{\"Measures Table.sum word\":{\"displayName\":\"Total Word\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataLabels\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.62,
+          "width": 177.71,
+          "x": 755.28,
+          "y": 180.33,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"801abd120420881b2dc6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":507.00544464609806,\"y\":180.32667876588022,\"z\":2000,\"width\":164.6460980036298,\"height\":148.96551724137933}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures Table.count Messages\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"count Messages\"},\"Name\":\"Measures Table.count Messages\",\"NativeReferenceName\":\"count Messages\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"count Messages\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 148.97,
+          "width": 164.65,
+          "x": 507.01,
+          "y": 180.33,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"80eebcff18245360aab9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":539.6733212341198,\"y\":313.6116152450091,\"z\":6000,\"width\":678.1851179673322,\"height\":380.2540834845735}}],\"singleVisual\":{\"visualType\":\"WordCloud1447959067750\",\"projections\":{\"Category\":[{\"queryRef\":\"WhatsappChat.Content\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WhatsappChat\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Content\"},\"Name\":\"WhatsappChat.Content\",\"NativeReferenceName\":\"Content\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"stopWords\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"minFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Words Used Most Frequently'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}],\"divider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"spacing\":[{\"properties\":{\"verticalSpacing\":{\"expr\":{\"Literal\":{\"Value\":\"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 380.25,
+          "width": 678.19,
+          "x": 539.67,
+          "y": 313.61,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"bd32b5e659991356c650\",\"layouts\":[{\"id\":0,\"position\":{\"x\":983.956442831216,\"y\":180.32667876588022,\"z\":4000,\"width\":216.91470054446464,\"height\":100.61705989110709}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures Table.sum_Letters\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"sum Letters\"},\"Name\":\"Measures Table.sum_Letters\",\"NativeReferenceName\":\"Total Letters\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"sum Letters\"}}}]},\"columnProperties\":{\"Measures Table.sum_Letters\":{\"displayName\":\"Total Letters\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataLabels\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}],\"categoryLabels\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.62,
+          "width": 216.91,
+          "x": 983.96,
+          "y": 180.33,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"cae82625813562858107\",\"layouts\":[{\"id\":0,\"position\":{\"x\":382.70658682634735,\"y\":31.113772455089823,\"z\":1000,\"width\":843.5928143712575,\"height\":60.35928143712575}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"UNIGLOS FAM GROUP CHAT ANALYSIS\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Times New Roman\",\"fontSize\":\"32pt\",\"color\":\"#075e54\"}}]}]}}]}},\"parentGroupName\":\"eb03608eac1174a1070a\"}",
+          "filters": "[]",
+          "height": 60.36,
+          "width": 843.59,
+          "x": 382.71,
+          "y": 31.11,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"ced3c9bd09b6360dbe01\",\"layouts\":[{\"id\":0,\"position\":{\"x\":280.9437386569873,\"y\":180.32667876588022,\"z\":1000,\"width\":152.88566243194194,\"height\":112.37749546279493}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures Table.No of Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"No of Days\"},\"Name\":\"Measures Table.No of Days\",\"NativeReferenceName\":\"No of Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"No of Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 112.38,
+          "width": 152.89,
+          "x": 280.94,
+          "y": 180.33,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"da46c77c0218080bc41e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24,\"y\":302,\"z\":5000,\"width\":484,\"height\":404}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"WhatsappChat.Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(WhatsappChat.Content)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WhatsappChat\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Name\"},\"Name\":\"WhatsappChat.Name\",\"NativeReferenceName\":\"Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Content\"}},\"Function\":2},\"Name\":\"CountNonNull(WhatsappChat.Content)\",\"NativeReferenceName\":\"Count of Content1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Content\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}],\"categoryAxis\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"innerPadding\":{\"expr\":{\"Literal\":{\"Value\":\"15L\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 10 Members Sending Most Messages.'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Heading3'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter6a66ba08cc48084ed005\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WhatsappChat\"}},\"Property\":\"Content\"}},\"Function\":2}},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":0},{\"name\":\"Filter17117677c66a3ec79e43\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"WhatsappChat\"}},\"Property\":\"Name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WhatsappChat\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Fisayo Francisca'\"}}],[{\"Literal\":{\"Value\":\"'Williams'\"}}],[{\"Literal\":{\"Value\":\"'Ogochukwu'\"}}],[{\"Literal\":{\"Value\":\"'Fowosere David'\"}}],[{\"Literal\":{\"Value\":\"'Aisosa'\"}}],[{\"Literal\":{\"Value\":\"'Ade'\"}}],[{\"Literal\":{\"Value\":\"'LAGOS CHIEF'\"}}],[{\"Literal\":{\"Value\":\"'NWA042 ✌🏽'\"}}],[{\"Literal\":{\"Value\":\"'Nil'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false,\"ordinal\":1}]",
+          "height": 404.00,
+          "width": 484.00,
+          "x": 24.00,
+          "y": 302.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"db7870ae9e72ab3a5283\",\"layouts\":[{\"id\":0,\"position\":{\"x\":53.57531760435572,\"y\":180.32667876588022,\"z\":0,\"width\":163.3393829401089,\"height\":139.81851179673322}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"WhatsappChat.Name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WhatsappChat\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Name\"}},\"Function\":2},\"Name\":\"WhatsappChat.Name\",\"NativeReferenceName\":\"Count of Name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Name\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataLabels\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}],\"categoryLabels\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 139.82,
+          "width": 163.34,
+          "x": 53.58,
+          "y": 180.33,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"eb03608eac1174a1070a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":53.333333333333336,\"y\":0,\"z\":7000,\"width\":1226.6666666666667,\"height\":121.66666666666667}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 121.67,
+          "width": 1226.67,
+          "x": 53.33,
+          "y": 0.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"f929c6fd1fea18038baf\",\"layouts\":[{\"id\":0,\"position\":{\"x\":983.956442831216,\"y\":101.92377495462796,\"z\":8000,\"width\":286.1705989110708,\"height\":62.72232304900182}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"WhatsappChat.Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WhatsappChat\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Name\"},\"Name\":\"WhatsappChat.Name\",\"NativeReferenceName\":\"Name\"}]},\"syncGroup\":{\"groupName\":\"Name\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select User'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 62.72,
+          "width": 286.17,
+          "x": 983.96,
+          "y": 101.92,
+          "z": 8000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "User Usage Analysis ",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionf792eb70340c3106a091",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"01c639b259c9122277ac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":64,\"y\":126,\"z\":3000,\"width\":224,\"height\":62}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures Table.ave messages per day\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ave messages per day\"},\"Name\":\"Measures Table.ave messages per day\",\"NativeReferenceName\":\"ave messages per day\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ave messages per day\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average Message Per Day'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}],\"spacing\":[{\"properties\":{\"verticalSpacing\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 62.00,
+          "width": 224.00,
+          "x": 64.00,
+          "y": 126.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"2c881b7dd541070973b9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.010752688172044,\"y\":189.93548387096774,\"z\":2000,\"width\":1268.989247311828,\"height\":289.03225806451616}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dates Table.Date\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures Table.count Messages\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dates Table\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"Dates Table.Date\",\"NativeReferenceName\":\"Date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"count Messages\"},\"Name\":\"Measures Table.count Messages\",\"NativeReferenceName\":\"count Messages\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showOnCategoryAxis\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showOnValueAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showTooltip\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}},\"selector\":{\"metadata\":\"Measures Table.count Messages\"}},{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"55D\"}}}}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'solid'\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"gridlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'dotted'\"}}},\"gridlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.5}}}}}}}],\"general\":[{\"properties\":{\"responsive\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Daily Message Sent'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleFontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}}}}],\"spacing\":[{\"properties\":{\"verticalSpacing\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"customizeSpacing\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"divider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter9669c9cc63bc273c6fa3\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dates Table\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"datetime'2023-02-16T00:00:00'\"}}]]}}}}}]},\"type\":\"Exclude\",\"howCreated\":4,\"filterExpressionMetadata\":{\"expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Dates Table\"}},\"Property\":\"Date\"}}],\"cachedValueItems\":[{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Dates Table\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2023-02-16T00:00:00'\"}}}}}],\"valueMap\":{\"0\":\"2/16/2023 12:00:00 AM\"}}]}}]",
+          "height": 289.03,
+          "width": 1268.99,
+          "x": 11.01,
+          "y": 189.94,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"4cf75ce842b29abb829b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":941.6666666666667,\"y\":126.66666666666667,\"z\":1000,\"width\":286.6666666666667,\"height\":63.333333333333336}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"WhatsappChat.Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WhatsappChat\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Name\"},\"Name\":\"WhatsappChat.Name\",\"NativeReferenceName\":\"Name\"}]},\"syncGroup\":{\"groupName\":\"Name\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select User'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 63.33,
+          "width": 286.67,
+          "x": 941.67,
+          "y": 126.67,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"698f995f0db4b19bc70c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":608.3333333333334,\"y\":496.6666666666667,\"z\":6000,\"width\":666.6666666666667,\"height\":223.33333333333334}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"sort weekday.weekday\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures Table.count Messages\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"sort weekday\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"weekday\"},\"Name\":\"sort weekday.weekday\",\"NativeReferenceName\":\"weekday\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"count Messages\"},\"Name\":\"Measures Table.count Messages\",\"NativeReferenceName\":\"count Messages\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelOrientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Count of Messages by Weekdays'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter93b8328d2024bf26ae93\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"sort weekday\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"weekday\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Exclude\",\"howCreated\":4,\"filterExpressionMetadata\":{\"expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"sort weekday\"}},\"Property\":\"weekday\"}}],\"cachedValueItems\":[{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"sort weekday\"}},\"Property\":\"weekday\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}],\"valueMap\":{\"0\":\"(Blank)\"}}]}}]",
+          "height": 223.33,
+          "width": 666.67,
+          "x": 608.33,
+          "y": 496.67,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"75a7c727863c41922192\",\"layouts\":[{\"id\":0,\"position\":{\"x\":382.70658682634735,\"y\":31.113772455089823,\"z\":1000,\"width\":843.5928143712575,\"height\":60.35928143712575}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"UNIGLOS FAM GROUP CHAT ANALYSIS\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Times New Roman\",\"fontSize\":\"32pt\",\"color\":\"#075e54\"}}]}]}}]}},\"parentGroupName\":\"d306eef509d0ca30a7ca\"}",
+          "filters": "[]",
+          "height": 60.36,
+          "width": 843.59,
+          "x": 382.71,
+          "y": 31.11,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"78d0a98d58c061415230\",\"layouts\":[{\"id\":0,\"position\":{\"x\":352,\"y\":126,\"z\":4000,\"width\":238,\"height\":62}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures Table.Average Words Per Message\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average Words Per Message\"},\"Name\":\"Measures Table.Average Words Per Message\",\"NativeReferenceName\":\"Average Words Per Message\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average Words Per Message\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average Word Per Message'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 62.00,
+          "width": 238.00,
+          "x": 352.00,
+          "y": 126.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"7ee0e4c763b046668db2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":5,\"y\":497,\"width\":603,\"height\":223,\"z\":7000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Measures Table.count Messages\"}],\"Category\":[{\"queryRef\":\"WhatsappChat.AM_PM\",\"active\":true},{\"queryRef\":\"WhatsappChat.Hour\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0},{\"Name\":\"w\",\"Entity\":\"WhatsappChat\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"count Messages\"},\"Name\":\"Measures Table.count Messages\",\"NativeReferenceName\":\"count Messages\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Hour\"},\"Name\":\"WhatsappChat.Hour\",\"NativeReferenceName\":\"Hour\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"AM_PM\"},\"Name\":\"WhatsappChat.AM_PM\",\"NativeReferenceName\":\"AM_PM\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"AM_PM\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Hour\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'step'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#185918'\"}}}}}},\"selector\":{\"metadata\":\"Measures Table.count Messages\"}}],\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'24 Hour Period'\"}}},\"titleColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#185918'\"}}}}},\"titleFontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Scalar'\"}}},\"start\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"end\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"29L\"}}},\"preferredCategoryWidth\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Messages by Hour of the Day'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#185918'\"}}}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 223.00,
+          "width": 603.00,
+          "x": 5.00,
+          "y": 497.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"bb2f73f6492e319cea14\",\"layouts\":[{\"id\":0,\"position\":{\"x\":638,\"y\":126,\"z\":5000,\"width\":262,\"height\":62}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures Table.Average Letters Per Message\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average Letters Per Message\"},\"Name\":\"Measures Table.Average Letters Per Message\",\"NativeReferenceName\":\"Average Letters Per Message\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average Letters Per Message\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average Letter Per Message'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Times New Roman'''\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#075E54'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 62.00,
+          "width": 262.00,
+          "x": 638.00,
+          "y": 126.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"d306eef509d0ca30a7ca\",\"layouts\":[{\"id\":0,\"position\":{\"height\":122,\"width\":1226.2994011976048,\"x\":24,\"y\":12,\"z\":0}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 122.00,
+          "width": 1226.30,
+          "x": 24.00,
+          "y": 12.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f8fdb55706d1203103d9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":380,\"height\":122}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"15305319539270581.jfif\"}}}}}]}},\"parentGroupName\":\"d306eef509d0ca30a7ca\"}",
+          "filters": "[]",
+          "height": 122.00,
+          "width": 380.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
